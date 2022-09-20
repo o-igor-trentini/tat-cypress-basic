@@ -1,31 +1,28 @@
 {
-  "name": "curso-cypress-v2",
-  "version": "1.0.0",
-  "description": "Repositório da versão 2 do curso básico de Cypress da Escola Talking About Testing",
-  "main": "src/index.html",
-  "scripts": {
-    "open": "cypress open",
-    "test": "cypress run"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/o-igor-trentini/tat-cypress-basic"
-  },
-  "keywords": [
-    "Testing",
-    "Cypress.io",
-    "Cypress Básico"
-  ],
-  "author": "Walmyr Filho <wlsf82@gmail.com> (https://walmyr.dev/)",
-  "license": "MIT",
-  "homepage": "https://github.com/wlsf82/cypress-basico-v2#readme",
-  "devDependencies": {
-    "cypress": "^9.5.1",
-    "eslint": "^8.22.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-cypress": "^2.12.1",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.7.1"
-  }
+    "name": "tat-cypress-basic",
+    "version": "1.0.0",
+    "description": "Aprendendo o básico do Cypress",
+    "main": "src/index.html",
+    "scripts": {
+        "open": "cypress open",
+        "test": "cypress run"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/o-igor-trentini/tat-cypress-basic"
+    },
+    "keywords": [
+        "Testing",
+        "Cypress.io",
+        "Cypress Básico"
+    ],
+    "devDependencies": {
+        "cypress": "^9.5.1",
+        "eslint": "^8.22.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-cypress": "^2.12.1",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "prettier": "^2.7.1"
+    }
 }
