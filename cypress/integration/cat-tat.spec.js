@@ -11,7 +11,9 @@ describe('Central de Atendimento ao Cliente TAT', function () {
         cy.get('#firstName').type('Igor');
         cy.get('#lastName').type('Trentini');
         cy.get('#email').type('igortrentini@email.com');
-        cy.get('#open-text-area').type('Obrigado pelo bom trabalho!');
+
+        const longText = 'Texto '.repeat(50);
+        cy.get('#open-text-area').type(longText, { delay: 0 });
 
         cy.get('button[type="submit"]').click();
 
