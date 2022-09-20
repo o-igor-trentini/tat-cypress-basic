@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wlsf82/cypress-basico-v2.git"
+    "url": "git+https://github.com/o-igor-trentini/tat-cypress-basic"
   },
   "keywords": [
     "Testing",
