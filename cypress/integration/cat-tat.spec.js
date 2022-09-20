@@ -24,11 +24,14 @@ describe('Central de Atendimento ao Cliente TAT', function () {
         cy.get('#firstName').type('Igor');
         cy.get('#lastName').type('Trentini');
         cy.get('#email').type('igortrentini@email,com');
-
         cy.get('#open-text-area').type('Texto');
 
         cy.get('button[type="submit"]').click();
 
         cy.get('.error').should('be.visible');
+    });
+
+    it('Campo telefone continua vazio quando preenchido com valor não numérico', () => {
+        cy.get('#phone').type('qualquer coisa').should('have.value', '');
     });
 });
