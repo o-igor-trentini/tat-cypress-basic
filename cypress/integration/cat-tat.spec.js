@@ -91,4 +91,11 @@ describe('Central de Atendimento ao Cliente TAT', function () {
             select('YouTube').
             should('have.value', 'youtube');
     });
+
+    it('Selecionar o produto (Youtube) pelo texto', () => {
+        cy.
+            get('#product').
+            select('YouTube').
+            should('have.value', 'youtube');
+    });
 });
