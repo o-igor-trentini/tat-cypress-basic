@@ -39,7 +39,7 @@ describe('Central de Atendimento ao Cliente TAT', function () {
         cy.get('#firstName').type('Igor');
         cy.get('#lastName').type('Trentini');
         cy.get('#email').type('igortrentini@email.com');
-        cy.get('#phone-checkbox').click();
+        cy.get('#phone-checkbox').check();
         cy.get('#open-text-area').type('Texto');
 
         cy.contains('button', 'Enviar').click();
