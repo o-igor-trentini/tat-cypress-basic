@@ -92,10 +92,17 @@ describe('Central de Atendimento ao Cliente TAT', function () {
             should('have.value', 'youtube');
     });
 
-    it.only('Selecionar o produto (Mentoria) pelo seu valor', () => {
+    it('Selecionar o produto (Mentoria) pelo seu valor', () => {
         cy.
             get('#product').
             select('mentoria').
             should('have.value', 'mentoria');
+    });
+
+    it('Seleciona o produto (Blog) pelo índice', () => {
+        cy.
+            get('#product').
+            select(1).
+            should('have.value', 'blog');
     });
 });
