@@ -171,7 +171,7 @@ describe('Central de Atendimento ao Cliente TAT', function () {
             invoke('removeAttr', 'target').
             click();
 
-        cy.contains('Talking About Testing').should('not.be.visible');
+        cy.contains('Talking About Testing').should('be.visible');
     });
 
     it('Testando em outras resoluções', () => {
