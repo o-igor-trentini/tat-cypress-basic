@@ -130,11 +130,21 @@ describe('Central de Atendimento ao Cliente TAT', function () {
             should('not.be.checked');
     });
 
-    it.only('Fazer updload arquivo', () => {
+    it('Fazer updload arquivo', () => {
         cy.
             get('input[type="file"]').
             should('not.have.value').
             selectFile('./cypress/fixtures/example.json').
+            should((input) => {
+                expect(input[0].files[0].name).to.equal('example.json');
+            });
+    });
+
+    it('Seleciona um arquvio simulando drag-and-drop', () => {
+        cy.
+            get('input[type="file"]').
+            should('not.have.value').
+            selectFile('./cypress/fixtures/example.json', { action: 'drag-drop' }).
             should((input) => {
                 expect(input[0].files[0].name).to.equal('example.json');
             });
